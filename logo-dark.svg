@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5AB" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA843D" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C5C8" />
+      <stop offset="100%" stop-color="#B76E79" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" rx="30" fill="#1A1A1A" />
+  <!-- Outer Decorative Ring -->
+  <circle cx="150" cy="150" r="125" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="8 4" opacity="0.85" />
+  <circle cx="150" cy="150" r="118" fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.6" />
+  <circle cx="150" cy="150" r="110" fill="none" stroke="url(#roseGrad)" stroke-width="1.5" />
+  
+  <!-- Floral & Fabric Petals Top and Bottom -->
+  <path d="M150 28 C155 42, 168 50, 168 62 C168 72, 160 80, 150 80 C140 80, 132 72, 132 62 C132 50, 145 42, 150 28 Z" fill="url(#goldGrad)" opacity="0.9"/>
+  <path d="M150 272 C155 258, 168 250, 168 238 C168 228, 160 220, 150 220 C140 220, 132 228, 132 238 C132 250, 145 258, 150 272 Z" fill="url(#goldGrad)" opacity="0.9"/>
+
+  <!-- BB Monogram -->
+  <text x="150" y="172" text-anchor="middle" font-family="'Cormorant Garamond', 'Marcellus', serif" font-size="82" font-weight="700" fill="url(#goldGrad)" letter-spacing="-4" filter="url(#goldGlow)">BB</text>
+  
+  <!-- Tagline Text -->
+  <text x="150" y="202" text-anchor="middle" font-family="'Jost', sans-serif" font-size="11" font-weight="500" letter-spacing="4" fill="#F8F5F2" opacity="0.9">BAHU BETI</text>
+  <text x="150" y="218" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="12" font-style="italic" letter-spacing="2" fill="url(#roseGrad)">Collection</text>
+</svg>
